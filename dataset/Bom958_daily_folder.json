@@ -1,0 +1,22 @@
+{
+	"name": "Bom958_daily_folder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azBlob",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fullPath": {
+				"type": "String",
+				"defaultValue": "undef"
+			}
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"folderPath": {
+				"value": "@dataset().curPath",
+				"type": "Expression"
+			}
+		}
+	}
+}
