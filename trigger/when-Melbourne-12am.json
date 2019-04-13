@@ -2,7 +2,7 @@
 	"name": "when-Melbourne-12am",
 	"properties": {
 		"description": "daily trigger which fires at Mel. 12AM or (UTC. 14PM) in winter",
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
