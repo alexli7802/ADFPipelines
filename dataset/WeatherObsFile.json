@@ -1,0 +1,30 @@
+{
+	"name": "WeatherObsFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azBlob",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"parentPath": {
+				"type": "String",
+				"defaultValue": "undef"
+			},
+			"fileName": {
+				"type": "String",
+				"defaultValue": "undef"
+			}
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": {
+				"value": "@dataset().fileName",
+				"type": "Expression"
+			},
+			"folderPath": {
+				"value": "@dataset().parentPath",
+				"type": "Expression"
+			}
+		}
+	}
+}
